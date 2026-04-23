@@ -1,9 +1,16 @@
 def remove_indentation(text):
     lines = text.split("\n")
-    return "\n".join(line.lstrip() for line in lines)
+    result = []
+
+    for line in lines:
+        result.append(line.lstrip())
+
+    return "\n".join(result)
+
 
 print("Enter multi-line text (end with empty line):")
 lines = []
+
 while True:
     line = input()
     if line == "":
@@ -11,4 +18,5 @@ while True:
     lines.append(line)
 
 text = "\n".join(lines)
+
 print(remove_indentation(text))

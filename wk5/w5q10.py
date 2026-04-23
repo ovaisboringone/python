@@ -1,5 +1,5 @@
 def count_vowels_consonants(text):
-    vowels = "aeiouAEIOU"
+    vowels = "aeiou"
     v_count = 0
     c_count = 0
 
@@ -13,6 +13,6 @@ def count_vowels_consonants(text):
     return v_count, c_count
 
 text = input("Enter text: ")
-v, c = count_vowels_consonants(text)
+v, c = count_vowels_consonants(text.lower())
 print("Vowels =", v)
 print("Consonants =", c)

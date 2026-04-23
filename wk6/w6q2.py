@@ -11,8 +11,5 @@ else:
     else:
         d = a
 
-if a < 0 or b < 0 or c < 0:
-    print("Invalid score entered")
-
 
 print("Lowest score is: ", d)
